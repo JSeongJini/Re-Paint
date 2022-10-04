@@ -41,3 +41,11 @@
 ![가장가까이](https://user-images.githubusercontent.com/70570420/193830019-d1157629-a0e3-4663-9e9a-d7cd4dab19f8.gif)
 > > > Solution. 목표로 하는 아군의 수가 가장 적은 적군에 가중치 부여
 ![가중치](https://user-images.githubusercontent.com/70570420/193830069-d29e3144-7a49-479b-9586-c5431cfbacd3.gif)
+
+> Q. 어떻게 싸울 것인가?
+> > A. 적의 공격을 피하기도 하고, 막기도 하는 전투  
+> >      게임성을 위해 병사가 가진 능력치에 기반하여 확률적으로 공격을 방어하고 회피
+![전투20221004_231441](https://user-images.githubusercontent.com/70570420/193843149-7a63e814-3c2a-4a7e-bd16-cf1b5745ec7d.gif)
+
+
+
