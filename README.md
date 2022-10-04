@@ -47,5 +47,10 @@
 > >      게임성을 위해 병사가 가진 능력치에 기반하여 확률적으로 공격을 방어하고 회피
 ![전투20221004_231441](https://user-images.githubusercontent.com/70570420/193843149-7a63e814-3c2a-4a7e-bd16-cf1b5745ec7d.gif)
 
+> Q. 한정된 애니메이션 에셋으로 보다 자연스러운 전투를 구현해야 한다.
+> > A. Animation Rigging 패키지를 활용하여 애니메이션 수정
+![IK](https://user-images.githubusercontent.com/70570420/193847650-8feb1c79-c20f-4874-8702-d5067134de83.png)
+![조준20221004_234855](https://user-images.githubusercontent.com/70570420/193851727-f8decb90-9d4f-4bc2-83dc-e72d574213a1.gif)
+
 
 
