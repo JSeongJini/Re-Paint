@@ -35,4 +35,9 @@
 ![시야개요](https://user-images.githubusercontent.com/70570420/193786134-58c57d89-a493-4038-b2a5-bdc195cf3035.PNG)
 ![시야20221004_185036](https://user-images.githubusercontent.com/70570420/193789843-e79a3e35-b570-4e1e-8188-b9e7fc7f9a80.gif)
 
-
+> Q. 누구를 볼 것인가?
+> > A. 가장 가까이 있는 적?
+> > > Problem. 모든 아군이 한 적군을 바라보는(목표로 하는) 현상 발생
+![가장가까이](https://user-images.githubusercontent.com/70570420/193830019-d1157629-a0e3-4663-9e9a-d7cd4dab19f8.gif)
+> > > Solution. 목표로 하는 아군의 수가 가장 적은 적군에 가중치 부여
+![가중치](https://user-images.githubusercontent.com/70570420/193830069-d29e3144-7a49-479b-9586-c5431cfbacd3.gif)
