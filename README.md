@@ -33,4 +33,6 @@
 > Q. 어떻게 볼 것인가?
 > > A. 전방은 멀리, 양 옆은 가까이, 뒤쪽은 매우 가까이
 ![시야개요](https://user-images.githubusercontent.com/70570420/193786134-58c57d89-a493-4038-b2a5-bdc195cf3035.PNG)
+![시야20221004_185036](https://user-images.githubusercontent.com/70570420/193789843-e79a3e35-b570-4e1e-8188-b9e7fc7f9a80.gif)
+
 
