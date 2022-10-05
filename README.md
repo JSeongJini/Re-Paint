@@ -26,6 +26,7 @@
 
 
 ### 내 역할 및 업무성과
+- 인공지능 전투 알고리즘을 개발하였습니다.
 > Q. 단순히 치고 받는 인공지능이 아닌, 보다 사람다운 인공지능을 개발하고 싶다.
 > > A. 시야를 만들어 주어 적을 인식하고, 적의 행동을 보고 자신의 행동을 결정하도록 하자.
 ![fsm](https://user-images.githubusercontent.com/70570420/193786086-cb37a826-4c34-42e1-831d-c942af48a923.PNG)
@@ -47,10 +48,12 @@
 > >      게임성을 위해 병사가 가진 능력치에 기반하여 확률적으로 공격을 방어하고 회피
 ![전투20221004_231441](https://user-images.githubusercontent.com/70570420/193843149-7a63e814-3c2a-4a7e-bd16-cf1b5745ec7d.gif)
 
+- 병사들의 전투를 보다 자연스럽게 연출하였습니다.
 > Q. 한정된 애니메이션 에셋으로 보다 자연스러운 전투를 구현해야 한다.
 > > A. Animation Rigging 패키지를 활용하여 애니메이션 수정
 ![IK](https://user-images.githubusercontent.com/70570420/193847650-8feb1c79-c20f-4874-8702-d5067134de83.png)
 ![조준20221004_234855](https://user-images.githubusercontent.com/70570420/193851727-f8decb90-9d4f-4bc2-83dc-e72d574213a1.gif)
 
+- 그 외 갖가지 작은 기능들과 UI들을 구현하였습니다.
 
 
