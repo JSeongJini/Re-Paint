@@ -71,6 +71,46 @@ private IEnumerator StateCoroutine()
 ![가장가까이](https://user-images.githubusercontent.com/70570420/193830019-d1157629-a0e3-4663-9e9a-d7cd4dab19f8.gif)
 > > > Solution. 목표로 하는 아군의 수가 가장 적은 적군에 가중치 부여
 ![가중치](https://user-images.githubusercontent.com/70570420/193830069-d29e3144-7a49-479b-9586-c5431cfbacd3.gif)
+```C#
+private Knight See()
+{
+    targetInViewRadius = Physics.OverlapSphere(transform.position, seeDistance, layerMask);
+
+    if (targetInViewRadius.Length == 0) return null;
+
+    //거리가 가까운 순서로 타겟 후보자 검색을 위한 SortedList
+    SortedList<float, Knight> candidates = new SortedList<float, Knight>();
+    for (int i = 0; i < targetInViewRadius.Length; i++)
+    {
+        Knight seenTarget = targetInViewRadius[0].GetComponentInChildren<Knight>();
+
+        //기사가 아니거나, 같은 팀이거나, 죽은상태라면 스킵
+        if (!seenTarget || seenTarget.team == team || seenTarget.state == EAIState.Defend)
+            continue;
+
+        Transform targetCandidate = seenTarget.transform;
+
+        float distance = Vector3.Distance(transform.position, targetCandidate.position);
+        Vector3 dirToTarget = (targetCandidate.position - transform.position).normalized;
+        float dot = Vector3.Dot(transform.forward, dirToTarget);
+
+        //내적 결과, 각도에 따라 볼 수 있는 거리 제한
+        if (dot >= 0.1f && distance <= seeDistance && !candidates.ContainsKey(distance + seenTarget.threat))
+            candidates.Add(distance + seenTarget.threat, seenTarget);
+        else if (dot < 0.1f && dot > -0.3f && distance <= seeDistance * 0.3f && !candidates.ContainsKey(distance + seenTarget.threat))
+            candidates.Add(distance + seenTarget.threat, seenTarget);
+        else if (dot < 0.3f && distance <= seeDistance * 0.1f && !candidates.ContainsKey(distance + seenTarget.threat))
+            candidates.Add(distance + seenTarget.threat, seenTarget);
+    }
+    
+    if(candidates.Count != 0)
+        return candidates.Values[0];
+    
+    return null;
+}
+```
+
+
 
 > Q. 어떻게 싸울 것인가?
 > > A. 적의 공격을 피하기도 하고, 막기도 하는 전투  
