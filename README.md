@@ -29,6 +29,36 @@
 > Q. 단순히 치고 받는 인공지능이 아닌, 보다 사람다운 인공지능을 개발하고 싶다.
 > > A. 시야를 만들어 주어 적을 인식하고, 적의 행동을 보고 자신의 행동을 결정하도록 하자.
 ![fsm](https://user-images.githubusercontent.com/70570420/193786086-cb37a826-4c34-42e1-831d-c942af48a923.PNG)
+```C#
+private IEnumerator StateCoroutine()
+    {
+        while (true)
+        {
+            //어떤 행동을 취하고 있는 중이라면 넘어감
+            if (doSomething)
+            {
+                yield return waitReaction;
+                continue;
+            }
+            
+            //타겟 재설정
+            target = See();
+            if (target == null)
+            {
+                yield return null;
+                continue;
+            }
+
+            //타겟정보로부터 다음 행동 결정
+            state = GetNextState(target);
+
+            //행동
+            Do(state);
+
+            yield return waitReaction;     //병사의 반응속도 능력치만큼 딜레이
+        }
+    }
+```
 
 > Q. 어떻게 볼 것인가?
 > > A. 전방은 멀리, 양 옆은 가까이, 뒤쪽은 매우 가까이
