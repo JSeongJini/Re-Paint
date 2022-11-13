@@ -45,7 +45,7 @@ private IEnumerator StateCoroutine()
             target = See();
             if (target == null)
             {
-                yield return null;
+                yield return waitReaction;
                 continue;
             }
 
