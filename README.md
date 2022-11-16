@@ -22,6 +22,7 @@
 
 ### 게임플레이
 ![Repaint](https://user-images.githubusercontent.com/70570420/179783011-9abcf480-4b00-4720-b44e-0563d59ebbda.png)
+[플레이 영상](https://youtu.be/UIOzqf8liU8)
 
 
 ### 내 역할 및 업무성과
